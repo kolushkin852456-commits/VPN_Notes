@@ -22,14 +22,12 @@
 Скачайте с https://www.postgresql.org/download/windows/
 
 ### 2. Создание базы данных
-
-psql -U postgres -c "CREATE DATABASE vpn_notes;"
-psql -U postgres -d vpn_notes -f setup_database.sql
-
+- Вручную
+- С помощью SQL-запроса
 ### 3. Создание тестовых пользователей
 python creat_users.py
 ### 4. Настройка подключения
-'''bash
+```bash
 DB_CONFIG = {
     'host': 'localhost',
     'database': 'vpn_notes',
@@ -37,10 +35,25 @@ DB_CONFIG = {
     'password': '5555555555',
     'port': '5432'
 }
-'''
-
+```
 ### Запуск программы
 python main.py
 
 ## Запуск тестов
 pytest Tests/ -v
+
+##Команды
+### Авторизация
+
+| Команда       | Описание      | 
+| ------------- | ------------- |
+| login         |Вход в систему |
+| logout        |Выход из сессии| 
+
+### Заметки
+| Команда       | Описание      | 
+| ------------- | ------------- |
+| addNewNote "текст"| Создать заметку  |
+|viewNotes  | Просмотр заметок  | 
+|deleteNote|Удалить заметку|
+
