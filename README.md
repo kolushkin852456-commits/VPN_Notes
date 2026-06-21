@@ -32,7 +32,7 @@ DB_CONFIG = {
     'host': 'localhost',
     'database': 'vpn_notes',
     'user': 'postgres',
-    'password': '5555555555',
+    'password': '**********',
     'port': '5432'
 }
 ```
