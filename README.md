@@ -29,7 +29,7 @@ psql -U postgres -d vpn_notes -f setup_database.sql
 ### 3. Создание тестовых пользователей
 python creat_users.py
 ### 4. Настройка подключения
-
+'''bash
 DB_CONFIG = {
     'host': 'localhost',
     'database': 'vpn_notes',
@@ -37,6 +37,7 @@ DB_CONFIG = {
     'password': '5555555555',
     'port': '5432'
 }
+'''
 
 ### Запуск программы
 python main.py
